@@ -1,0 +1,317 @@
+gpAdminHelpCfg:
+  title: 群组管理帮助
+  subTitle: AlemonJS & Xiangling
+  colWidth: 380
+  colCount: 2
+  twoColumnLayout: true
+  themeName: default
+  bgBlur: true
+gpAdminHelpList:
+  left:
+  - group: 群投票系统
+    auth: admin
+    list:
+    - icon: 4
+      title: '#启用投票禁言'
+      desc: 开启投票禁言功能
+    - icon: 4
+      title: '#禁用投票禁言'
+      desc: 关闭投票禁言功能
+    - icon: 4
+      title: '#启用投票踢人'
+      desc: 开启投票踢人功能
+    - icon: 4
+      title: '#禁用投票踢人'
+      desc: 关闭投票踢人功能
+    - icon: 6
+      title: '#投票禁言 <@QQ>'
+      desc: 发起禁言投票
+    - icon: 6
+      title: '#投票踢人 <@QQ>'
+      desc: 发起踢人投票
+    - icon: 12
+      title: '#支持投票 <@QQ>'
+      desc: 支持指定投票
+    - icon: 12
+      title: '#反对投票 <@QQ>'
+      desc: 反对指定投票
+    - icon: 16
+      title: '#投票设置超时时间 <秒>'
+      desc: 设置投票超时时间（管理员）
+    - icon: 13
+      title: '#投票设置最低票数 <人数>'
+      desc: 设置投票成功所需人数（管理员）
+    - icon: 15
+      title: '#投票设置禁言时间 <秒>'
+      desc: 设置投票成功后的禁言时间（管理员）
+    - icon: 13
+      title: '#启用/禁用管理员一票权'
+      desc: 设置管理员跟票是否直接裁决（管理员）
+    - icon: 13
+      title: '#启用/禁用投票管理员'
+      desc: 设置是否允许对群管理员发起投票（管理员）
+    order: 1
+  - group: 群主专用
+    auth: owner
+    list:
+    - icon: 8
+      title: '#设置管理 <@QQ>'
+      desc: 设置群管理员
+    - icon: 9
+      title: '#取消管理 <@QQ>'
+      desc: 取消群管理员
+    - icon: 19
+      title: '#申请头衔 <头衔>'
+      desc: 成员自助申请头衔（Bot需群主）
+    - icon: 10
+      title: '#修改头衔 <@QQ> <头衔>'
+      desc: 修改成员头衔
+    - icon: 2
+      title: '#增加头衔屏蔽词'
+      desc: 添加头衔屏蔽词
+    - icon: 2
+      title: '#减少头衔屏蔽词'
+      desc: 移除头衔屏蔽词
+    - icon: 2
+      title: '#查看头衔屏蔽词'
+      desc: 查看头衔屏蔽词列表
+    - icon: 13
+      title: '#切换头衔屏蔽词匹配模式'
+      desc: 切换屏蔽词匹配模式
+    order: 2
+  - group: 进群验证
+    auth: admin
+    list:
+    - icon: 18
+      title: '#查看验证'
+      desc: 查看本群入群验证状态
+    - icon: 4
+      title: '#开启验证'
+      desc: 开启入群验证
+    - icon: 15
+      title: '#关闭验证'
+      desc: 关闭入群验证
+    - icon: 1
+      title: '#重新验证 <@QQ>'
+      desc: 重新验证指定成员
+    - icon: 2
+      title: '#重新验证从未发言的人'
+      desc: 重新验证从未发言的成员
+    - icon: 3
+      title: '#绕过验证 <@QQ>'
+      desc: 绕过指定成员的验证
+    - icon: 2
+      title: '#切换验证模式 / #设置验证模式<计算|提交>'
+      desc: 切换或指定入群验证类型
+    - icon: 17
+      title: '#设置验证超时时间 <秒>'
+      desc: 设置验证超时时间（管理员）
+    order: 3
+  - group: 活跃度管理
+    auth: admin
+    list:
+    - icon: 15
+      title: '#查看n月没发言的人'
+      desc: 查看指定时间段未发言成员
+    - icon: 14
+      title: '#清理n天没发言的人'
+      desc: 清理不活跃成员，需二次确认
+    - icon: 1
+      title: '#查看从未发言的人'
+      desc: 查看进群后从未发言的成员
+    - icon: 5
+      title: '#清理从未发言的人'
+      desc: 清理从未发言成员，需二次确认
+    - icon: 16
+      title: '#查看不活跃排行榜'
+      desc: 查看不活跃成员排名
+    - icon: 4
+      title: '#查看最近入群情况'
+      desc: 查看最近入群成员
+    order: 4
+  - group: 定时任务
+    auth: admin
+    list:
+    - icon: 12
+      title: '#定时禁言 00:00'
+      desc: 设置定时禁言
+    - icon: 12
+      title: '#定时解禁 00:00'
+      desc: 设置定时解禁
+    - icon: 10
+      title: '#定时禁言任务'
+      desc: 查看所有定时任务
+    - icon: 3
+      title: '#取消定时禁言'
+      desc: 取消定时禁言任务
+    - icon: 3
+      title: '#取消定时解禁'
+      desc: 取消定时解禁任务
+    order: 5
+  - group: 加群管理
+    auth: admin
+    list:
+    - icon: 2
+      title: '#查看加群申请'
+      desc: 查看本群的加群申请
+    - icon: 19
+      title: '#同意加群申请 <QQ>'
+      desc: 同意指定成员的加群申请（管理员）
+    - icon: 19
+      title: '#拒绝加群申请 <QQ>'
+      desc: 拒绝指定成员的加群申请（管理员）
+    - icon: 3
+      title: '#同意全部加群申请'
+      desc: 同意所有加群申请（管理员）
+    - icon: 3
+      title: '#拒绝全部加群申请'
+      desc: 拒绝所有加群申请（管理员）
+    order: 6
+  - group: 公告与通知
+    auth: admin
+    list:
+    - icon: 16
+      title: '#发通知 <消息>'
+      desc: 发送@全体成员的通知
+    order: 7
+  - group: 精华消息
+    auth: admin
+    list:
+    - icon: 18
+      title: '#加精'
+      desc: 回复消息设为精华
+    - icon: 18
+      title: '#移精'
+      desc: 移除精华消息
+    order: 8
+  right:
+  - group: 欢迎与退出
+    auth: admin
+    list:
+    - icon: 16
+      title: '#设置欢迎'
+      desc: 设置入群欢迎消息
+    - icon: 16
+      title: '#设置退出'
+      desc: 设置退群消息
+    - icon: 3
+      title: '#查看欢迎'
+      desc: 查看当前欢迎消息
+    - icon: 3
+      title: '#查看退出'
+      desc: 查看当前退群消息
+    - icon: 4
+      title: '#重置欢迎'
+      desc: 重置为默认欢迎消息
+    - icon: 4
+      title: '#重置退出'
+      desc: 重置为默认退群消息
+    - icon: 5
+      title: '#结束设置'
+      desc: 结束多行输入设置
+    - icon: 5
+      title: '#取消设置'
+      desc: 取消多行输入设置
+    order: 1
+  - group: 权限与设置
+    auth: admin
+    list:
+    - icon: 2
+      title: '#开启加群通知'
+      desc: 在群内显示加群申请
+    - icon: 2
+      title: '#关闭加群通知'
+      desc: 不在群内显示加群申请
+    - icon: 1
+      title: '#加白 <@QQ>'
+      desc: 添加白名单成员（管理员）
+    - icon: 1
+      title: '#删白 <@QQ>'
+      desc: 移除白名单成员（管理员）
+    - icon: 8
+      title: '#开启白名单解禁'
+      desc: 白名单被禁言时自动解禁（管理员）
+    - icon: 8
+      title: '#关闭白名单解禁'
+      desc: 关闭白名单自动解禁（管理员）
+    - icon: 20
+      title: '#我要自闭 <时间>'
+      desc: 自我禁言一段时间
+    - icon: 6
+      title: '#群聊通知帮助'
+      desc: 查看群聊通知功能帮助
+    order: 2
+  - group: 基础管理
+    auth: admin
+    list:
+    - icon: 1
+      title: '#禁言 <@QQ> <时间>'
+      desc: 禁言指定成员
+    - icon: 2
+      title: '#解禁 <@QQ>'
+      desc: 解除成员禁言
+    - icon: 3
+      title: '#全体禁言'
+      desc: 开启全体禁言
+    - icon: 3
+      title: '#全体解禁'
+      desc: 关闭全体禁言
+    - icon: 4
+      title: '#踢 <@QQ>'
+      desc: 踢出群成员
+    - icon: 8
+      title: '#获取禁言列表'
+      desc: 查看当前被禁言的成员
+    - icon: 6
+      title: '#解除全部禁言'
+      desc: 解除所有成员的禁言
+    order: 3
+  - group: 群信息查询
+    auth: all
+    list:
+    - icon: 6
+      title: '#哪个叼毛是龙王'
+      desc: 查看今日龙王
+    order: 4
+  - group: 违禁词管理
+    auth: admin
+    list:
+    - icon: 7
+      title: '#新增违禁词'
+      desc: 添加违禁词
+    - icon: 3
+      title: '#删除违禁词'
+      desc: 删除指定违禁词
+    - icon: 9
+      title: '#查看违禁词'
+      desc: 查看违禁词详情
+    - icon: 17
+      title: '#违禁词列表'
+      desc: 查看所有违禁词
+    - icon: 17
+      title: '#违禁词列表原始'
+      desc: 查看原始违禁词列表
+    - icon: 11
+      title: '#设置违禁词禁言时间 <秒>'
+      desc: 设置违禁词触发禁言时间
+    order: 5
+  - group: 艾特追踪
+    auth: all
+    list:
+    - icon: 9
+      title: 谁@我
+      desc: 查看谁@了自己
+    - icon: 9
+      title: 谁艾特我
+      desc: 查看谁@了自己
+    - icon: 10
+      title: 谁@他
+      desc: 查看谁@了指定成员
+    - icon: 10
+      title: 谁艾特他
+      desc: 查看谁@了指定成员
+    - icon: 11
+      title: '#清除艾特数据'
+      desc: 清除自己的@记录
+    order: 7
+  fullWidth: []

@@ -1,0 +1,11 @@
+import { type EventKeys, type Events } from 'alemonjs';
+export type GroupRole = 'owner' | 'admin' | 'member' | '';
+export declare const getGroupRole: <T extends EventKeys>(event: Events[T]) => Promise<GroupRole>;
+export declare const getGroupMemberRole: <T extends EventKeys>(event: Events[T], groupId: number, userId: number) => Promise<GroupRole>;
+export declare const getBotGroupRole: <T extends EventKeys>(event: Events[T], groupId: number) => Promise<GroupRole>;
+export declare const hasBotGroupAdminPermission: <T extends EventKeys>(event: Events[T], groupId: number) => Promise<boolean>;
+export declare const hasBotGroupOwnerPermission: <T extends EventKeys>(event: Events[T], groupId: number) => Promise<boolean>;
+export declare const hasGroupAdminPermission: <T extends EventKeys>(event: Events[T]) => Promise<boolean>;
+export declare const hasGroupOwnerPermission: <T extends EventKeys>(event: Events[T]) => Promise<boolean>;
+export declare const isAdminRole: (role: GroupRole) => boolean;
+export declare const isMasterUser: <T extends EventKeys>(event: Events[T], userId: unknown) => boolean;

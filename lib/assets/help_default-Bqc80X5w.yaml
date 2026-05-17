@@ -1,0 +1,236 @@
+helpCfg:
+  title: 机器人管理帮助
+  subTitle: AlemonJS & Xiangling
+  colWidth: 380
+  colCount: 2
+  twoColumnLayout: true
+  themeName: default
+  bgBlur: true
+helpList:
+  left:
+  - group: 群组管理
+    auth: admin
+    list:
+    - icon: 8
+      title: '#改群名片 <名片>'
+      desc: 修改本群内机器人名片（主人）
+    - icon: 9
+      title: '#改群名称 <名称>'
+      desc: 修改群名称
+    - icon: 10
+      title: '#改群头像 <图片>'
+      desc: 修改群头像（管理员）
+    - icon: 12
+      title: '#退群 <群号>'
+      desc: 退出指定群聊（主人）
+    - icon: 18
+      title: '#批量退群 <群号1,群号2,...>'
+      desc: 批量退出多个群（主人，最多20个）
+    - icon: 13
+      title: '#(获取)?群列表'
+      desc: 查看所有群列表（主人）
+    - icon: 15
+      title: '#群信息 [群号]'
+      desc: 查看群详细信息（主人）
+    - icon: 16
+      title: '#群员统计'
+      desc: 统计所有群成员数量（主人）
+    - icon: 17
+      title: '#搜索群 <关键词>'
+      desc: 搜索群聊（主人）
+    - icon: 19
+      title: '#重载群列表'
+      desc: 刷新群列表缓存（主人）
+    order: 1
+  - group: 插件设置
+    auth: master
+    list:
+    - icon: 8
+      title: '#管理设置'
+      desc: 打开通知设置页面
+    - icon: 8
+      title: '#管理设置通知[项目]开启/关闭'
+      desc: 设置具体通知项
+    - icon: 12
+      title: '#管理设置通知全部开启/关闭'
+      desc: 一键启用/禁用全部通知
+    - icon: 9
+      title: '#投票设置'
+      desc: 设置投票参数
+    - icon: 9
+      title: '#投票设置超时时间'
+      desc: 设置投票超时时间
+    - icon: 9
+      title: '#投票设置最低票数'
+      desc: 设置投票最低票数
+    - icon: 9
+      title: '#投票设置禁言时间'
+      desc: 设置投票禁言时间
+    - icon: 9
+      title: '#启用/禁用管理员一票权'
+      desc: 设置管理员是否可以一票裁决
+    - icon: 9
+      title: '#启用/禁用投票管理员'
+      desc: 设置是否允许对群管理员投票
+    order: 2
+  - group: 工具功能
+    list:
+    - icon: 5
+      title: '#取直链'
+      desc: 获取图片直链
+    - icon: 11
+      title: '#取face'
+      desc: 获取表情ID
+    - icon: 3
+      title: '#ocr'
+      desc: 图片文字识别
+    - icon: 16
+      title: '#取头像 <@QQ>'
+      desc: 获取用户高清头像
+    - icon: 16
+      title: '#取群头像 <群号>'
+      desc: 获取群高清头像
+    - icon: 6
+      title: '#设置日志等级 <参数>'
+      desc: 设置控制台日志等级
+    order: 3
+  right:
+  - group: 账号管理
+    auth: master
+    list:
+    - icon: 3
+      title: '#改头像 <图片>'
+      desc: 修改机器人头像（协议端需支持）
+    - icon: 5
+      title: '#改昵称 <昵称>'
+      desc: 修改机器人昵称（协议端需支持）
+    - icon: 6
+      title: '#改签名 <签名>'
+      desc: 修改个性签名（协议端需支持）
+    - icon: 4
+      title: '#改状态 <状态>'
+      desc: 修改在线状态（协议端需支持）
+    - icon: 7
+      title: '#改性别 <性别>'
+      desc: 修改性别信息（协议端需支持）
+    order: 1
+  - group: 好友管理
+    auth: master
+    list:
+    - icon: 13
+      title: '#(获取)?好友列表'
+      desc: 查看所有好友
+    - icon: 11
+      title: '#删好友 <QQ>'
+      desc: 删除指定好友
+    order: 2
+  - group: 权限管理
+    auth: master
+    list:
+    - icon: 13
+      title: '#加黑 #删黑'
+      desc: 添加/删除全局黑名单（主人/授权用户）
+    - icon: 13
+      title: '#加白 #删白'
+      desc: 添加/删除全局白名单（管理员权限）
+    - icon: 13
+      title: '#黑名单列表 #白名单列表'
+      desc: 查看全局黑名单/白名单列表
+    - icon: 13
+      title: '#查黑'
+      desc: 检查当前群并踢出全局黑名单成员
+    - icon: 13
+      title: '#全群查黑'
+      desc: 检查所有群并踢出全局黑名单成员（主人）
+    - icon: 13
+      title: '#黑名单授权 #黑名单取消授权'
+      desc: 授权/取消授权用户使用黑名单管理（主人）
+    - icon: 13
+      title: '#黑名单管理列表'
+      desc: 查看授权管理名单（主人）
+    order: 3
+  - group: 申请处理
+    auth: master
+    list:
+    - icon: 1
+      title: '#查看好友申请'
+      desc: 查看待处理的好友申请
+    - icon: 18
+      title: '#同意/拒绝好友申请 <QQ>'
+      desc: 处理指定好友申请
+    - icon: 6
+      title: '#同意/拒绝全部好友申请'
+      desc: 一键处理所有好友申请
+    - icon: 3
+      title: '#查看群邀请'
+      desc: 查看待处理的群邀请
+    - icon: 7
+      title: '#同意/拒绝群邀请 <群号>'
+      desc: 处理指定群邀请
+    - icon: 15
+      title: '#同意/拒绝全部群邀请'
+      desc: 一键处理所有群邀请
+    - icon: 20
+      title: '#查看全部请求'
+      desc: 查看所有待处理请求
+    order: 4
+  - group: 反馈系统
+    list:
+    - icon: 1
+      title: '#反馈 <内容>'
+      desc: 发送反馈给主人
+    - icon: 2
+      title: '#回复反馈 <识别码> <内容>'
+      desc: 回复指定反馈（主人可用）
+    - icon: 3
+      title: '#反馈列表 [页码]'
+      desc: 查看反馈列表（主人可用）
+    - icon: 4
+      title: '#删除反馈 <识别码>'
+      desc: 删除指定反馈（主人可用）
+    - icon: 5
+      title: '#清空反馈'
+      desc: 清空反馈记录（主人可用）
+    order: 5
+  - group: 消息发送
+    auth: master
+    list:
+    - icon: 1
+      title: '#发好友 <QQ> <消息>'
+      desc: 给好友发送消息
+    - icon: 2
+      title: '#发群聊 <群号> <消息>'
+      desc: 给群聊发送消息
+    order: 6
+  fullWidth:
+  - group: 帮助文档
+    list:
+    - icon: 3
+      title: '#管理帮助'
+      desc: 查看通用帮助
+    - icon: 3
+      title: '#群组管理帮助'
+      desc: 查看群管帮助
+    - icon: 16
+      title: '#香菱信息 / #群管信息 / #机器人信息'
+      desc: 查看机器人信息
+    - icon: 13
+      title: '#状态 / #状态pro / #监控'
+      desc: 查看运行状态和消息统计
+    - icon: 13
+      title: '#指令表 / #指令查询'
+      desc: 查看或查询插件命令
+    order: 1
+  - group: 插件维护
+    auth: master
+    list:
+    - icon: 15
+      title: '#管理插件版本'
+      desc: 查看版本信息
+    - icon: 12
+      title: '#管理插件更新日志'
+      desc: 查看迁移更新日志
+    - icon: 8
+      title: '#管理状态 / #管理状态pro'
+      desc: 查看运行状态
+    order: 100

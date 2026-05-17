@@ -1,0 +1,353 @@
+body {
+    background-color: #141726;
+    width: 100%;
+    min-width: 1000px;
+    font-family: "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+    max-width: 1100px;
+    min-width: 900px;
+    padding: 20px 0;
+    background-size: 100% 100%;
+    background-color: #141726;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.log-cont {
+    background-size: cover;
+    margin: 20px 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    .cont {
+        margin: 0;
+        background-color: rgb(41, 44, 53);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .cont-title {
+        font-size: 22px;
+        font-weight: bold;
+        padding: 15px 25px 10px;
+        border-bottom: 2px solid rgba(249, 223, 143, 0.5);
+        color: #f9df8f;
+        text-align: left;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), transparent);
+
+        &.current-version {
+            font-size: 26px;
+            color: #ffdf70;
+            border-bottom: 3px solid rgba(255, 223, 112, 0.7);
+        }
+    }
+
+    // ============ 主标题样式 (### 标题) - 醒目蓝色 ============
+    .main-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4a9eff;
+        margin: 15px 0 8px 0;
+        padding: 8px 15px;
+        background: linear-gradient(to right, rgba(74, 158, 255, 0.15), transparent);
+        border-left: 4px solid #4a9eff;
+        border-radius: 0 5px 5px 0;
+        text-shadow: 0 1px 2px rgba(74, 158, 255, 0.3);
+        border-top: 1px solid rgba(74, 158, 255, 0.2);
+        border-bottom: 1px solid rgba(74, 158, 255, 0.2);
+
+        &:before {
+            content: "▶ ";
+            color: #4a9eff;
+            margin-right: 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    }
+
+    // ============ 子标题样式 (#### 标题) - 青色 ============
+    .sub-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #66ccff;
+        margin: 12px 0 6px 25px;
+        padding: 6px 12px 6px 30px;
+        background: linear-gradient(to right, rgba(102, 204, 255, 0.1), transparent);
+        border-left: 3px solid #66ccff;
+        border-radius: 0 4px 4px 0;
+        position: relative;
+
+        &:before {
+            content: "▸ ";
+            color: #66ccff;
+            margin-right: 6px;
+            font-size: 14px;
+        }
+
+        // 子标题的装饰线
+        &:after {
+            content: "";
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            width: 10px;
+            height: 1px;
+            background: linear-gradient(to right, rgba(102, 204, 255, 0.3), transparent);
+        }
+    }
+
+    ul {
+        font-size: 15px;
+        padding-left: 0;
+        margin: 0;
+        list-style-type: none;
+
+        &.log-ul {
+            margin: 0 25px 15px;
+
+            > li {
+                margin: 10px 0;
+                padding: 0;
+            }
+        }
+
+        &.sub-log-ul {
+            padding-left: 35px;
+            margin: 5px 0 12px 0;
+
+            li {
+                margin: 8px 0;
+                padding-left: 15px;
+                position: relative;
+                color: #e0e0e0;
+                line-height: 1.7;
+                word-wrap: break-word;
+                word-break: break-word;
+                overflow-wrap: break-word;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #4a9eff;
+                    border-radius: 50%;
+                }
+                
+                ul li:before {
+                    background-color: #66ccff;
+                    width: 4px;
+                    height: 4px;
+                }
+            }
+        }
+    }
+
+    .cmd {
+        color: #d3bc8e;
+        display: inline-block;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2px 8px;
+        margin: 0 4px;
+        font-family: "Consolas", "Monaco", "Courier New", monospace;
+        font-size: 14px;
+        border: 1px solid rgba(211, 188, 142, 0.3);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .strong {
+        color: #f9df8f;
+        font-weight: bold;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .new {
+        display: inline-block;
+        padding: 1px 6px;
+        margin: 0 4px;
+        font-size: 11px;
+        font-weight: bold;
+        color: #ff6b6b;
+        background: rgba(255, 107, 107, 0.15);
+        border: 1px solid rgba(255, 107, 107, 0.4);
+        border-radius: 10px;
+        vertical-align: middle;
+        transform: translateY(-1px);
+    }
+}
+
+/* cont */
+.cont {
+    border-radius: 10px;
+    background-size: auto 100%;
+    margin: 5px 15px 5px 10px;
+    position: relative;
+    box-shadow: 0 0 1px 0 #ccc, 2px 2px 4px 0 rgba(50, 50, 50, 0.8);
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+
+    &>ul {
+        &.cont-msg {
+            display: block;
+            padding: 5px 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+// 旧的标题样式，现在作为备用
+.cont-title {
+    color: #d3bc8e;
+    padding: 10px 20px;
+    text-align: left;
+    border-radius: 10px 10px 0 0;
+
+    span {
+        font-size: 12px;
+        color: #aaa;
+        margin-left: 10px;
+        font-weight: normal;
+    }
+
+    &.border-less {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+        box-shadow: none;
+        padding-bottom: 5px;
+    }
+}
+
+.cont-body {
+    padding: 20px 25px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.7;
+    color: #e8e8e8;
+    box-sizing: border-box;
+}
+
+/* 响应式处理 */
+@media (max-width: 1100px) {
+    .container {
+        width: 95%;
+        min-width: 900px;
+    }
+    
+    .log-cont {
+        margin: 20px 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 98%;
+        min-width: 800px;
+    }
+    
+    .log-cont {
+        margin: 15px 20px;
+        
+        .cont-title {
+            font-size: 20px;
+            padding: 12px 20px 8px;
+            
+            &.current-version {
+                font-size: 24px;
+            }
+        }
+        
+        .main-title {
+            font-size: 16px;
+            padding: 6px 12px;
+        }
+        
+        .sub-title {
+            font-size: 14px;
+            padding: 5px 10px 5px 25px;
+            margin: 10px 0 5px 20px;
+        }
+    }
+    
+    .cont-body {
+        padding: 15px 20px;
+        font-size: 13px;
+    }
+}
+
+/* 打印优化 */
+@media print {
+    .container {
+        width: 100%;
+        min-width: auto;
+        padding: 0;
+        background-color: white;
+    }
+    
+    body {
+        background-color: white;
+        min-width: auto;
+    }
+    
+    .log-cont {
+        margin: 10px 0;
+        box-shadow: none;
+        
+        .cont {
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: none;
+        }
+        
+        .cont-title {
+            color: #333;
+            border-bottom: 2px solid #333;
+        }
+        
+        .main-title {
+            color: #2266cc;
+            border-left: 3px solid #2266cc;
+            background: #f0f7ff !important;
+            text-shadow: none !important;
+        }
+        
+        .sub-title {
+            color: #3399ff;
+            border-left: 2px solid #3399ff;
+            background: #f7fbff !important;
+        }
+        
+        .sub-title:after {
+            display: none;
+        }
+    }
+    
+    .cont-body {
+        color: #333;
+    }
+    
+    .log-cont ul.sub-log-ul li {
+        color: #444;
+        
+        &:before {
+            background-color: #666 !important;
+        }
+    }
+    
+    .cmd {
+        color: #555;
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        box-shadow: none;
+    }
+}

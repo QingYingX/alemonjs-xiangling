@@ -1,0 +1,52 @@
+{
+  "name": "alemonjs-xiangling",
+  "version": "0.1.0",
+  "description": "香菱插件 for AlemonJS OneBot group management.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "require": "./lib/index.js",
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src/assets/legacy",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "app": "node index.js",
+    "dev": "npx lvy app.ts",
+    "view": "npx lvy app.ts --jsxp",
+    "build": "npx lvy build",
+    "pack:check": "npm pack --dry-run",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "alemonjs": "^2.1.83",
+    "@alemonjs/onebot": "^2.1.16",
+    "@alemonjs/db": "^0.0.17",
+    "jsxp": "^1.4.0"
+  },
+  "dependencies": {
+    "yaml": "^1.10.3"
+  },
+  "devDependencies": {
+    "alemonjs": "^2.1.83",
+    "@alemonjs/onebot": "^2.1.16",
+    "@alemonjs/db": "^0.0.17",
+    "jsxp": "^1.4.0",
+    "lvyjs": "^0.3.0-alpha.2",
+    "@types/node": "^22"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}

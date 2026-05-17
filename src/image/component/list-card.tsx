@@ -1,8 +1,7 @@
 import React from 'react';
-
-const bg = new URL('../../assets/legacy/resources/help/imgs/default/bg.jpg', import.meta.url).href;
-const fzbFont = new URL('../../assets/legacy/resources/common/font/FZB.ttf', import.meta.url).href;
-const nzbzFont = new URL('../../assets/legacy/resources/common/font/NZBZ.ttf', import.meta.url).href;
+import bg from '../../assets/legacy/resources/help/imgs/default/bg.jpg';
+import fzbFont from '../../assets/legacy/resources/common/font/FZB.ttf';
+import nzbzFont from '../../assets/legacy/resources/common/font/NZBZ.ttf';
 
 export type ListCardItem = {
   title: string;

@@ -1,13 +1,13 @@
 import React from 'react';
 import type { DiskMetric, MessageStatsTable, NetworkMetric, ProgressMetric, StateImageData } from '../../model/admin/state';
-const bg = new URL('../../assets/legacy/resources/state/img/bg/2.jpg', import.meta.url).href;
-const avatar = new URL('../../assets/legacy/resources/state/img/default_avatar.jpg', import.meta.url).href;
-const harmonyFont = new URL('../../assets/legacy/resources/state/font/HarmonyOS_SansSC_Bold.ttf', import.meta.url).href;
-const botIcon = new URL('../../assets/legacy/resources/state/icon/screenshot.png', import.meta.url).href;
-const groupIcon = new URL('../../assets/legacy/resources/state/icon/group.png', import.meta.url).href;
-const friendIcon = new URL('../../assets/legacy/resources/state/icon/friend.png', import.meta.url).href;
-const recvIcon = new URL('../../assets/legacy/resources/state/icon/recv.png', import.meta.url).href;
-const sentIcon = new URL('../../assets/legacy/resources/state/icon/sent.png', import.meta.url).href;
+import bg from '../../assets/legacy/resources/state/img/bg/2.jpg';
+import avatar from '../../assets/legacy/resources/state/img/default_avatar.jpg';
+import harmonyFont from '../../assets/legacy/resources/state/font/HarmonyOS_SansSC_Bold.ttf';
+import botIcon from '../../assets/legacy/resources/state/icon/screenshot.png';
+import groupIcon from '../../assets/legacy/resources/state/icon/group.png';
+import friendIcon from '../../assets/legacy/resources/state/icon/friend.png';
+import recvIcon from '../../assets/legacy/resources/state/icon/recv.png';
+import sentIcon from '../../assets/legacy/resources/state/icon/sent.png';
 
 const clamp = (value: number, min: number, max: number): number => Math.min(max, Math.max(min, value));
 

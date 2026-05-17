@@ -1,7 +1,10 @@
 node_modules/
+lib/
 *.tgz
 .data/
 .env
 .env.*
 npm-debug.log*
 yarn-error.log*
+dist-release/
+local-release.sh

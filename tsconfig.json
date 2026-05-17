@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "paths": {
-      "@src/*": ["./src/*"]
-    }
-  },
-  "include": ["src/**/*"],
-  "extends": "lvyjs/tsconfig.json"
-}

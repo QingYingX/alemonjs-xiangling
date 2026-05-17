@@ -7,4 +7,3 @@ lib/
 npm-debug.log*
 yarn-error.log*
 dist-release/
-local-release.sh
